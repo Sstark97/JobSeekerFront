@@ -9,7 +9,7 @@ import { RegisterComponent } from './components/register/register.component';
 const routes: Routes = [
   {
     path: '',
-    component: RegisterComponent,
+    component: LoginComponent,
     // redirectTo: 'login',
     // pathMatch: 'full'
   },
@@ -22,8 +22,8 @@ const routes: Routes = [
     component: CvComponent
   },
   {
-    path: 'login',
-    component: LoginComponent
+    path: 'home',
+    component: HomeComponent
   },
   {
     path: 'register',

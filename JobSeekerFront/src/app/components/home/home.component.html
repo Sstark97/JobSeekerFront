@@ -10,13 +10,12 @@
         <div class="row d-flex" *ngFor= 'let job of jobs' >
             <div class=" d-flex col-12 col-md-4 border rounded">
                 <div class="d-flex flex-column align-items-start w-50">
-                    <h2 class="me-2">Ingeniero/a Ensayos</h2>
-                    <p>TALENTIX ENCLAVE DE SOLUCIONES</p>
+                    <p class="me-2 fs-3 fw-bold p-1">{{job.title}}</p>
                 </div>
-                <div class="d-flex flex-column w-50">
+                <div class="d-flex flex-column w-50 m-5 mt-2">
         
-                    <p>>Pamplona/Iruña, Navarra (España)</p>
-                    <p>Publicada hace 3d (Publicada de nuevo)</p>
+                    <p>{{job.city}}</p>
+                    <a href="{{job.link}}"> More Details</a>
         
                 </div>
             </div>
